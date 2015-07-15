@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LearningAndroidDataBinding</string>
+    <string name="app_getting_started">GettingStarted</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="username">姓名</string>
+    <string name="password">密码</string>
+</resources>
