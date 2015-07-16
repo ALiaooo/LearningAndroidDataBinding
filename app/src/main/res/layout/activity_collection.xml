@@ -10,13 +10,7 @@
         <variable name="keyDirector" type="String"/>
         <variable name="map" type="Map<String, String>"/>
         <variable name="sparse" type="SparseArray<String>"/>
-
         <variable name="list" type="List<String>"/>
-
-        <import type="java.util.Map" />
-        <import type="java.util.List" />
-        <import type="android.util.SparseArray" />
-
 
     </data>
 
