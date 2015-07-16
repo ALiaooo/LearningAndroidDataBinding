@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="java.util.List"/>
+        <import type="java.util.Map"/>
+        <import type="android.util.SparseArray"/>
+        <variable name="index" type="int"/>
+        <variable name="keyAuthor" type="String"/>
+        <variable name="keyDirector" type="String"/>
+        <variable name="map" type="Map<String, String>"/>
+        <variable name="sparse" type="SparseArray<String>"/>
+
+        <variable name="list" type="List<String>"/>
+
+        <import type="java.util.Map" />
+        <import type="java.util.List" />
+        <import type="android.util.SparseArray" />
+
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{list[index]+"-"+map[keyAuthor]}'/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{map[keyDirector]}"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{sparse[(index+1)]}"
+            />
+
+
+    </LinearLayout>
+
+</layout>
