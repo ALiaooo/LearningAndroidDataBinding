@@ -23,4 +23,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="自定义Binding类名称"/>
+
+    <Button
+        android:id="@+id/btn_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="include中传递变量到被包含layout"/>
+    <Button
+        android:id="@+id/btn_app_expression"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="表达式"/>
 </LinearLayout>

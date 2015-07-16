@@ -19,7 +19,8 @@ import com.aliao.learningdatabinding.model.User;
  *   使用data binding后，就不用再在activity里直接操作layout中的控件，而是通过生成的Binding类把model中的值更新到view上。
  *   =========================================================
  *
- *   http://www.willowtreeapps.com/blog/mvvm-on-android-what-you-need-to-know/
+ *   Data Binding 用户指南（Android）http://segmentfault.com/a/1190000002876984#articleHeader11
+ *   MVVM on Android: What You Need to Know:http://www.willowtreeapps.com/blog/mvvm-on-android-what-you-need-to-know/
  *   在以往的Android架构中，是由controller将数据推送给view，即在Activity中通过findviewbyid找到该view，然后给他设置内容
  *   而在MVVM中，ViewModel(将view与model绑定在一起的对象)更改了数据，然后通知bindig framework数值改变了。该框架就会自动更新绑定了该model内容的任何view视图。
  */

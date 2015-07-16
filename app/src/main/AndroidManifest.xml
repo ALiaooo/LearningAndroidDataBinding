@@ -19,6 +19,10 @@
 
         <activity android:name=".activity.GettingStartedActivity"
             android:label="@string/app_getting_started"/>
+        <activity android:name=".activity.IncludesActivity"
+            android:label="@string/app_includes"/>
+        <activity android:name=".activity.ExpressionActivity"
+            android:label="@string/app_expression"/>
     </application>
 
 </manifest>

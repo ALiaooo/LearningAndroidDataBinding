@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="user"
+            type="com.aliao.learningdatabinding.model.User"/>
+
+        <variable
+            name="large" type="boolean"/>
+
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{"name:"+user.userName??"I am ALiao"}'
+            />
+
+        <TextView
+            android:padding="@{large?(int)@dimen/large_padding:(int)@dimen/small_padding}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{@string/emailFormat("email",user.email)}'
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='@{"sex:"+(user.sex=="boy"?"boy":"girl")}'
+            />
+
+
+    </LinearLayout>
+
+</layout>
