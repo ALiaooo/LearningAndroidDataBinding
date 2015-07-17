@@ -39,4 +39,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="集合"/>
+    <Button
+        android:id="@+id/btn_app_observable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data对象"/>
 </LinearLayout>

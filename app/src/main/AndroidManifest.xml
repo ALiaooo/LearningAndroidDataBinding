@@ -25,6 +25,8 @@
             android:label="@string/app_expression"/>
         <activity android:name=".activity.CollectionActivity"
             android:label="@string/app_collection"/>
+        <activity android:name=".activity.ObservableActivity"
+            android:label="@string/app_observable"/>
     </application>
 
 </manifest>

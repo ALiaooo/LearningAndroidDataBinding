@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="android.databinding.ObservableMap"/>
+        <import type="android.databinding.ObservableArrayList"/>
+        <variable
+            name="user"
+            type="com.aliao.learningdatabinding.model.ObservableUser"/>
+        <variable
+            name="plainUser"
+            type="com.aliao.learningdatabinding.model.PlainUser"/>
+        <variable
+            name="mapUser"
+            type="ObservableMap&lt;String,Object>"/>
+        <variable
+            name="listUser"
+            type="ObservableArrayList&lt;String>"/>
+    </data>
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Observal Object"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='@{"name:"+user.userName+" , lover:"+user.lover}'/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Observal Field"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='@{"plain name:"+plainUser.userName+", lover:"+plainUser.lover+", age:"+plainUser.age}'/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Observal Collection-ObservableArrayMap"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`mapUserName:`+mapUser[`name`]+`,lover:`+mapUser[`lover`]+`,age:`+mapUser[`age`]}"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Observal Collection-ObserableList"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{listUser.size()>0?(`listUserName:`+listUser[0]+`,lover:`+listUser[1]+`,age:`+listUser[2]):``}"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="setOtherName"
+                android:text="set other name"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="setMyName"
+                android:text="set my name"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</layout>

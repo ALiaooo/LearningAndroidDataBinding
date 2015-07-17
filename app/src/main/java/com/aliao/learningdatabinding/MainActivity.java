@@ -12,6 +12,7 @@ import com.aliao.learningdatabinding.activity.CustomBindingClassNameActivity;
 import com.aliao.learningdatabinding.activity.ExpressionActivity;
 import com.aliao.learningdatabinding.activity.GettingStartedActivity;
 import com.aliao.learningdatabinding.activity.IncludesActivity;
+import com.aliao.learningdatabinding.activity.ObservableActivity;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_include).setOnClickListener(this);
         findViewById(R.id.btn_app_expression).setOnClickListener(this);
         findViewById(R.id.btn_app_collection).setOnClickListener(this);
+        findViewById(R.id.btn_app_observable).setOnClickListener(this);
     }
 
     @Override
@@ -70,6 +72,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_app_collection:
                 startActivity(new Intent(MainActivity.this, CollectionActivity.class));
+                break;
+            case R.id.btn_app_observable:
+                startActivity(new Intent(MainActivity.this, ObservableActivity.class));
                 break;
         }
     }
