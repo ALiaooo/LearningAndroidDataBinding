@@ -3,6 +3,7 @@
     <string name="app_getting_started">GettingStarted</string>
     <string name="app_includes">Includes</string>
     <string name="app_expression">Expression</string>
+    <string name="app_collection">Collection</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>

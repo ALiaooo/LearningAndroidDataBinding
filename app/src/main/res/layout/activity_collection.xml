@@ -5,12 +5,13 @@
         <import type="java.util.List"/>
         <import type="java.util.Map"/>
         <import type="android.util.SparseArray"/>
+
         <variable name="index" type="int"/>
         <variable name="keyAuthor" type="String"/>
         <variable name="keyDirector" type="String"/>
-        <variable name="map" type="Map<String, String>"/>
-        <variable name="sparse" type="SparseArray<String>"/>
-        <variable name="list" type="List<String>"/>
+        <variable name="list" type="List&lt;String>"/>
+        <variable name="map" type="Map&lt;String, String>"/>
+        <variable name="sparse" type="SparseArray&lt;String>"/>
 
     </data>
 

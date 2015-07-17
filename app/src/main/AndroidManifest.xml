@@ -23,6 +23,8 @@
             android:label="@string/app_includes"/>
         <activity android:name=".activity.ExpressionActivity"
             android:label="@string/app_expression"/>
+        <activity android:name=".activity.CollectionActivity"
+            android:label="@string/app_collection"/>
     </application>
 
 </manifest>

@@ -33,5 +33,10 @@
         android:id="@+id/btn_app_expression"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="表达式"/>
+        android:text="表达式的使用"/>
+    <Button
+        android:id="@+id/btn_app_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="集合"/>
 </LinearLayout>

@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.aliao.learningdatabinding.activity.CollectionActivity;
 import com.aliao.learningdatabinding.activity.CustomBindingClassNameActivity;
 import com.aliao.learningdatabinding.activity.ExpressionActivity;
 import com.aliao.learningdatabinding.activity.GettingStartedActivity;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_custom).setOnClickListener(this);
         findViewById(R.id.btn_include).setOnClickListener(this);
         findViewById(R.id.btn_app_expression).setOnClickListener(this);
+        findViewById(R.id.btn_app_collection).setOnClickListener(this);
     }
 
     @Override
@@ -65,6 +67,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_app_expression:
                 startActivity(new Intent(MainActivity.this, ExpressionActivity.class));
+                break;
+            case R.id.btn_app_collection:
+                startActivity(new Intent(MainActivity.this, CollectionActivity.class));
                 break;
         }
     }
